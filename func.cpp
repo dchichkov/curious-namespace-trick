@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 // output:
-//  dmitry@t:~$ g++ -std=c++11 func.cpp -Dplatform=common ; ./a.out 
+//  dmitry@t:~$ g++ func.cpp -Dplatform=common ; ./a.out 
 //  common add
-//  dmitry@t:~$ g++ -std=c++11 func.cpp -Dplatform=arm ; ./a.out 
+//  dmitry@t:~$ g++ func.cpp -Dplatform=arm ; ./a.out 
 //  arm add
 
 namespace project {
