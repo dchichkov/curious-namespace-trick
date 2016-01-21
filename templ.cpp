@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 // output:
-//  dmitry@t:~$ g++ -std=c++11 templ.cpp -Dplatform= ; ./a.out 
+//  dmitry@t:~$ g++ templ.cpp -Dplatform= ; ./a.out 
 //  common add
-//  dmitry@t:~$ g++ -std=c++11 templ.cpp -Dplatform=arm ; ./a.out 
+//  dmitry@t:~$ g++ templ.cpp -Dplatform=arm ; ./a.out 
 //  arm add
 
 namespace project {
