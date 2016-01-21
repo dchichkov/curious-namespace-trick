@@ -9,7 +9,7 @@
 namespace project {
   // arm/math.h
   namespace arm {
-    inline void add_() {printf("arm add\n");  // try comment out
+    inline void add_() {printf("arm add\n");}  // try comment out
   }
 
   // math.h
