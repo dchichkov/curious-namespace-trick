@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 // output:
-//  dmitry@t:~$ g++ templ.cpp -Dplatform= ; ./a.out 
+//  dmitry@t:~$ g++ templ.cpp -DPLATFORM= ; ./a.out 
 //  common add
-//  dmitry@t:~$ g++ templ.cpp -Dplatform=arm ; ./a.out 
+//  dmitry@t:~$ g++ templ.cpp -DPLATFORM=arm ; ./a.out 
 //  arm add
 
 namespace project {
@@ -18,7 +18,7 @@ namespace project {
     printf("common T add\n");
     // mode code
     // even more code
-  } inline namespace platform {template<typename T>  inline void add() {add_<T>();}}
+  } inline namespace PLATFORM {template<typename T>  inline void add() {add_<T>();}}
 
 
   template<typename T> inline void dot_() {
@@ -26,7 +26,7 @@ namespace project {
     add<T>();
     // this dot template function is a long one
 
-  } inline namespace platform {template<typename T> inline void dot() {dot_<T>();}}
+  } inline namespace PLATFORM {template<typename T> inline void dot() {dot_<T>();}}
 }
 
 int main() {
